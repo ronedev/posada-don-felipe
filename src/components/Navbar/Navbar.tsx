@@ -36,7 +36,10 @@ const Navbar = () => {
                 <FormattedMessage id="nav.contact" defaultMessage="Contacto" />
               </a>
             </li>
-            <select onChange={(e)=> LangContext.cambiarIdioma(e.target.value)}>
+            <select onChange={(e)=> LangContext.cambiarIdioma(e.target.value)} defaultValue={
+                LangContext.lenguaje === 'es-AR' ? 'es-AR' :
+                    LangContext.lenguaje === 'en-US' ? 'en-US' : 'es-AR'
+            }>
               <option value="es-AR">ES</option>
               <option value="en-US">EN</option>
             </select>

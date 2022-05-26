@@ -8,7 +8,8 @@ interface props {
 }
 
 interface ILangContext {
-    cambiarIdioma: (lenguaje: string)=>void 
+    cambiarIdioma: (lenguaje: string)=>void,
+    lenguaje: string
 }
 
 const langContext = React.createContext<ILangContext>({} as ILangContext);
@@ -57,7 +58,7 @@ const LangProvider = ({ children }: props) => {
     }
 
   return (
-    <langContext.Provider value={{ cambiarIdioma: cambiarIdioma}}>
+    <langContext.Provider value={{ cambiarIdioma: cambiarIdioma, lenguaje: locale}}>
       <IntlProvider
         locale={locale}
         messages={mensajes}

@@ -5,6 +5,7 @@ import {
   Route
 } from 'react-router-dom'
 import Navbar from 'components/Navbar/Navbar';
+import Header from 'components/Header/Header';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={
           <>
             <Navbar />
+            <Header />
           </>
         } />
 

@@ -1,5 +1,8 @@
 {
     "nav.home": "Inicio",
     "nav.posada": "Posada",
-    "nav.contact": "Contacto"
+    "nav.contact": "Contacto",
+
+    "header.title": "Descubrí nuestros paisajes",
+    "header.btn": "¡Consulta disponibilidad!"
 }

@@ -1,5 +1,8 @@
 {
     "nav.home": "Home",
     "nav.posada": "House",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact",
+    
+    "header.title": "Discover our landscapes",
+    "header.btn": "Check for availability!"
 }
