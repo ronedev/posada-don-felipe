@@ -33,3 +33,24 @@ body{
     font-size: 1rem;
   }
 }
+
+.btn2{
+  border: 1px solid $terciario;
+  background: transparent;
+  color: $terciario;
+  border-radius: .5rem;
+  font-family: $fuente_secundaria;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  &:hover{
+    background-color: $terciario;
+    color: $blanco;
+  }
+  @include tablet{
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}

@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import Navbar from 'components/Navbar/Navbar';
 import Header from 'components/Header/Header';
+import { SanRafael } from 'components/San Rafael/SanRafael';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <>
             <Navbar />
             <Header />
+            <SanRafael />
           </>
         } />
 

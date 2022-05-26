@@ -1,0 +1,40 @@
+.sanRafaelSection{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    @include tablet{
+        flex-direction: column;
+        height: 100%;
+        margin: 2rem 0;
+    }
+    img{
+        width: 50rem;
+        @include tablet{
+            width: 40rem;
+        }
+        @include telefono{
+            width: 30rem;
+        }
+    }
+    .sanRafaelDescription{
+        display: grid;
+        justify-items: center;
+        gap: 2rem;
+        width: 40rem;
+        p{
+            color: $terciario;
+            font-family: $fuente_secundaria;
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+        @include tablet{
+            width: 30rem;
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
