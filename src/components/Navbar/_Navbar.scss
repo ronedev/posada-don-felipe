@@ -17,6 +17,9 @@
                 font-weight: 800;
                 color: $secundario;
             }
+            @include tablet{
+                font-size: 1.8rem;
+            }
         }
         .navegacionContainer{
             .navegacion{
@@ -43,7 +46,7 @@
                     flex-direction: column;
                     margin: 0;
                     height: 90vh;
-                    width: 30%;
+                    width: 50%;
                     padding: 0;
                     select,a{
                         font-size: 1.5rem;
@@ -54,7 +57,7 @@
                 background-color: rgba(0, 0, 0, .05);
                 display: flex;
                 justify-content: flex-end;
-                width: 100%;
+                width: 100vw;
                 position: absolute;
                 top: 100%;
                 left: 300%;

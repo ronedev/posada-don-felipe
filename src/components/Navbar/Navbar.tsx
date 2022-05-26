@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import { langContext } from "context/LangContext";
+import React, { useContext, useState } from "react";
+import { FormattedMessage } from "react-intl";
 
 const Navbar = () => {
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
+
+  const LangContext = useContext(langContext)
 
   return (
     <div className="navbarContainer">
@@ -9,20 +13,32 @@ const Navbar = () => {
         <h1 id="logo">
           La posada de <span>Don Felipe</span>
         </h1>
-        <div className={menuVisible ? 'navegacionContainer active' : 'navegacionContainer desactive'}>
-          <ul className='navegacion'>
+        <div
+          className={
+            menuVisible
+              ? "navegacionContainer active"
+              : "navegacionContainer desactive"
+          }
+        >
+          <ul className="navegacion">
             <li>
-              <a href="/">Inicio</a>
+              <a href="/">
+                <FormattedMessage id="nav.home" defaultMessage="Inicio" />
+              </a>
             </li>
             <li>
-              <a href="/posada-don-felipe">Posada</a>
+              <a href="/posada-don-felipe">
+                <FormattedMessage id="nav.posada" defaultMessage="Posada" />
+              </a>
             </li>
             <li>
-              <a href="/contacto">Contacto</a>
+              <a href="/contacto">
+                <FormattedMessage id="nav.contact" defaultMessage="Contacto" />
+              </a>
             </li>
-            <select>
-              <option value="es">ES</option>
-              <option value="en">EN</option>
+            <select onChange={(e)=> LangContext.cambiarIdioma(e.target.value)}>
+              <option value="es-AR">ES</option>
+              <option value="en-US">EN</option>
             </select>
           </ul>
         </div>
