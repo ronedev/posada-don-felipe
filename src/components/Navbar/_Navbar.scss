@@ -1,0 +1,115 @@
+.navbarContainer{
+    width: 100%;
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        #logo{
+            font-family: $fuente_secundaria;
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            color: $principal;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, .4);
+            span{
+                font-family: $fuente_principal;
+                font-weight: 800;
+                color: $secundario;
+            }
+        }
+        .navegacionContainer{
+            .navegacion{
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 25rem;
+                a{
+                    color: $gris;
+                    font-family: $fuente_secundaria;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                }
+                select{
+                    border: none;
+                    font-family: $fuente_secundaria;
+                    font-size: 1.3rem;
+                    color: $gris;
+                    outline: none;
+                }
+                @include tablet{
+                    background-color: $blanco;
+                    flex-direction: column;
+                    margin: 0;
+                    height: 90vh;
+                    width: 30%;
+                    padding: 0;
+                    select,a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            @include tablet{
+                background-color: rgba(0, 0, 0, .05);
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                position: absolute;
+                top: 100%;
+                left: 300%;
+                transition: all .6s;
+                -webkit-transition: all .6s;
+                -moz-transition: all .6s;
+                overflow: hidden;
+                &.active{
+                    left: 0%;
+                }
+            }
+        }
+        .menuIcon{
+            display: none;
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 3rem;
+                height: 2rem;
+                cursor: pointer;
+                position: relative;
+                span{
+                    background-color: $gris;
+                    width: 100%;
+                    height: .3rem;
+                    border-radius: .5rem;
+                    transition: all .5s;
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                }
+                &.active{
+                    #supLine{
+                        transform: translateY(.8rem) rotate(45deg);
+                    }
+                    #midLine{
+                        width: 0;
+                    }
+                    #botLine{
+                        transform: translateY(-.8rem) rotate(-45deg);
+                    }
+                }
+                &.desactive{
+                    #supLine{
+                        transform: translateY(0) rotate(0);
+                    }
+                    #midLine{
+                        width: 100%;
+                    }
+                    #botLine{
+                        transform: translateY(0) rotate(0);
+                    }
+                }
+            }
+        }
+    }
+}
