@@ -7,6 +7,7 @@ import {
 import Navbar from 'components/Navbar/Navbar';
 import Header from 'components/Header/Header';
 import { SanRafael } from 'components/San Rafael/SanRafael';
+import { Circuitos } from 'components/Circuitos/Circuitos';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Navbar />
             <Header />
             <SanRafael />
+            <Circuitos />
           </>
         } />
 
