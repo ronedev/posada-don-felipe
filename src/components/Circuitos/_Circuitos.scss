@@ -24,18 +24,20 @@
     .carrusel{
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 2rem;
+        justify-content: center;
+        gap: 4rem;
         width: 100%;
         .arrowVisible{
             width: 4rem;
             cursor: pointer;
         }
         .arrowInvisible{
-            opacity: 0;
+            width: 4rem;
+            opacity: .6;
+            cursor:no-drop;
         }
         .circuitoContainer{
-            width: 90rem;
+            width: 70rem;
             height: 50rem;
             position: relative;
         }
@@ -48,8 +50,13 @@
             top: 0;
             left: 300%;
             width: 100%;
+            opacity: 0;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
             &.selected{
                 left: 0;
+                opacity: 1;
             }
             h3{
                 font-family: $fuente_principal;
@@ -66,9 +73,13 @@
                 justify-content: space-evenly;
                 gap: 3rem;
                 .card{
-                    width: 25rem;
+                    width: 20rem;
                     height: 40rem;
                     position: relative;
+                    cursor: pointer;
+                    transition: all .5s;
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
                     img{
                         height: 100%;
                         width: 100%;
@@ -81,6 +92,16 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
+                        opacity: 0;
+                        transition: all .5s;
+                        -webkit-transition: all .5s;
+                        -moz-transition: all .5s;
+                    }
+                    &.selected{
+                        width: 30rem;
+                        .infoCard{
+                            opacity: 1;
+                        }
                     }
                 }
             }

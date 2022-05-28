@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import { circuitoPlaceContext } from 'context/CircuitoPlaceContext'
+import React, { useContext, useState } from 'react'
 import { FormattedMessage } from 'react-intl'
 
 interface circuito {
-    circuito: {
+    circuitoPlace: {
         name: string,
         description: string,
         distance: string,
@@ -10,20 +11,20 @@ interface circuito {
     }
 }
 
-const CardCircuito = ({ circuito }: circuito) => {
+const CardCircuito = ({ circuitoPlace }: circuito) => {
 
-    const [selected, setSelected] = useState<boolean>(false)
+    const {placeSelected, changePlaceSelected} = useContext(circuitoPlaceContext)
 
     return (
-        <article className='card'>
-            <img src={circuito.img} alt="card" />
+        <article className={placeSelected === circuitoPlace.name ? 'card selected': 'card'} onClick={()=> changePlaceSelected(circuitoPlace.name)}>
+            <img src={circuitoPlace.img} alt="card" />
             <div className='infoCard'>
-                <h4>{circuito.name}</h4>
+                <h4>{circuitoPlace.name}</h4>
                 <p>
-                    <FormattedMessage id={circuito.description} />
+                    <FormattedMessage id={circuitoPlace.description} />
                 </p>
                 <span>
-                    <FormattedMessage id={circuito.distance} />
+                    <FormattedMessage id={circuitoPlace.distance} />
                 </span>
             </div>
         </article>

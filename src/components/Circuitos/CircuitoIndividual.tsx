@@ -1,5 +1,4 @@
 import React from 'react'
-import { FormattedMessage } from 'react-intl'
 import { CardCircuito } from './CardCircuito'
 
 interface circuito{
@@ -18,7 +17,7 @@ const CircuitoIndividual = ({circuito}:props) => {
             {circuito.map(circ =>{
                 return(
                     <>
-                        <CardCircuito circuito={circ} />
+                        <CardCircuito circuitoPlace={circ} />
                     </>
                 )
             })}
