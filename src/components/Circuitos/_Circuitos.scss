@@ -8,27 +8,49 @@
         width: 20rem;
         height: 10rem;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         border-radius: 0 0 20rem 20rem;
         background-color: $terciario;
         h2{
-            font-size: 2rem;
+            font-size: 1.6rem;
+            width: 15rem;
             color: $blanco;
-            font-family: $fuente_principal;
+            font-family: $fuente_secundaria;
+            font-weight: 100;
             text-align: center;
         }
     }
     .carrusel{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        max-width: 100vw;
+        justify-content: space-around;
+        gap: 2rem;
+        width: 100%;
+        .arrowVisible{
+            width: 4rem;
+            cursor: pointer;
+        }
+        .arrowInvisible{
+            opacity: 0;
+        }
+        .circuitoContainer{
+            width: 90rem;
+            height: 50rem;
+            position: relative;
+        }
         .circuito{
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 300%;
+            width: 100%;
+            &.selected{
+                left: 0;
+            }
             h3{
                 font-family: $fuente_principal;
                 font-size: 2rem;
@@ -44,12 +66,21 @@
                 justify-content: space-evenly;
                 gap: 3rem;
                 .card{
-                    width: 30rem;
+                    width: 25rem;
                     height: 40rem;
+                    position: relative;
                     img{
                         height: 100%;
                         width: 100%;
                         object-fit: cover;
+                    }
+                    .infoCard{
+                        background-color: rgba(0, 0, 0, .4);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
                     }
                 }
             }
