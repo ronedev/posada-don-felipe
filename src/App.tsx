@@ -8,6 +8,7 @@ import Navbar from 'components/Navbar/Navbar';
 import Header from 'components/Header/Header';
 import { SanRafael } from 'components/San Rafael/SanRafael';
 import { Circuitos } from 'components/Circuitos/Circuitos';
+import { Footer } from 'components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Header />
             <SanRafael />
             <Circuitos />
+            <Footer />
           </>
         } />
 

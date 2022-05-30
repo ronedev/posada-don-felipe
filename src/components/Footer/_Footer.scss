@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15rem;
+    background-color: $gris;
+    font-family: $fuente_principal;
+    color: $aux;
+    .posadaInfo{
+        width: 30rem;
+        h3{
+            text-transform: uppercase;
+            font-family: $fuente_secundaria;
+            font-weight: 100;
+            span{
+                font-family: $fuente_principal;
+                font-weight: 800;
+                margin: 0;
+            }
+        }
+        p{
+            font-weight: 100;
+        }
+    }
+    .contacto{
+        h3{
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        span{
+            font-weight: 100;
+        }
+    }
+    .redes{
+        h3{
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        img{
+            width: 3rem;
+            margin-left: 1rem;
+        }
+    }
+}

@@ -8,5 +8,28 @@
     
     "sanRafael.text1": "Many of the best landscapes in the country, fun, adventure, party, peace, harmony and excellent gastronomy await you in San Rafael. Making our city the best choice to enjoy both as a family and individually.",
     "sanRafael.text": "And at La Posada de Don Felipe we give you the necessary comfort so that you feel at home in our city. Do you still have any questions?",
-    "sanRafael.btn": "See the house"
+    "sanRafael.btn": "See the house",
+
+    "circuitos.title": "Our beautiful city",
+    "circuitos.btn": "See the house",
+    "circuitos.circuito.title": "Circuit of the ",
+    "circuitos.card1.text": "It is located at the eastern end of the El Nihuil Reservoir, developing as a tourist village on said artificial lake, also taking advantage of the attraction of the Atuel Canyon.",
+    "circuitos.card1": "Approximately 70 km from La Posada de Don Felipe",
+    "circuitos.card2.text": "It is one of the most important reservoirs in the province, and an important tourist destination, due to the beauty of the place. It is characterized by its various activities for tourists such as: river rafting, kayaking, canoeing, horseback riding, rappelling, climbing, zip lines, hiking, paragliding, catamaran rides on the lake, windsurfing, water skiing, ATVs.",
+    "circuitos.card2": "Approximately 40 km from La Posada de Don Felipe",
+    "circuitos.card3.text": "It is a narrow canyon where the Atuel River flows, connecting El Nihuil with the Valle Grande. With an extension of approximately 60 km, it is the owner of many of the best landscapes of our town.",
+    "circuitos.card3": "Approximately 40 km from La Posada de Don Felipe entering through Valle Grande and 70 km from La Posada de Don Felipe entering through El Nihuil.",
+    "circuitos.card4.text": "It was born together with the Diamond Fort in 1805, and from that year it was established as the departmental capital until 1905. It is one of the oldest towns in our province, full of history and beautiful places.",
+    "circuitos.card4": "Approximately 25 km from La Posada de Don Felipe",
+    "circuitos.card5.text": "Reservoir built on the Diamante River. Perhaps the least known and most undervalued, however its waters are perfect for fishing and it has one of the most beautiful sunsets in the department.",
+    "circuitos.card5": "Approximately 30 km from La Posada de Don Felipe",
+    "circuitos.card6.text": "It has a nautical and fishing club where water sports such as skiing, wakeboarding, windsurfing, canoeing, diving, fishing, among others, are practiced. Around its shores are weekend houses, restaurants, camps, cabins.",
+    "circuitos.card6": "Approximately 35 km from La Posada de Don Felipe",
+
+    "footer.info": "We are a humble family that during the pandemic made the decision to start this entrepreneurship to support themselves. The remodeling of the house in its entirety counts on the sweat of each one of us, to transform the house where we grew up into a completely welcoming place and that our home can also be the momentary home of others.",
+    "footer.contacto.title": "Contact us: ",
+    "footer.contacto.telefono": "Phone numbers: ",
+    "footer.contacto.email": "Email: ",
+    "footer.contacto.direccion": "Address: ",
+    "footer.redes.title": "Our social networks: "
 }

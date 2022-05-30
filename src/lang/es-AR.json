@@ -8,5 +8,28 @@
 
     "sanRafael.text1": "En San Rafael no solo te esperan muchos de los mejores paisajes del pais, tambien diversion, aventura, fiesta, paz, armonia y excelente gastronomia. Haciendo de nuestra ciudad la mejor eleccion para disfrutar tanto en familia como individualmente.",
     "sanRafael.text": "Y en La Posada de Don Felipe te damos la comodidad necesaria para que en nuestra ciudad te sientas como en casa. ¿Todavia te queda alguna duda?",
-    "sanRafael.btn": "Ver la posada"
+    "sanRafael.btn": "Ver la posada",
+
+    "circuitos.title": "Nuestra hermosa ciudad",
+    "circuitos.btn": "Ver la posada",
+    "circuitos.circuito.title": "Circuito del ",
+    "circuitos.card1.text": "Se halla en el extremo oriental del Embalse El Nihuil, desarrollándose como una villa turística sobre dicho lago artificial, aprovechando también el atractivo del Cañón del Atuel.",
+    "circuitos.card1": "A aproximadamente 70 km de La Posada de Don Felipe",
+    "circuitos.card2.text": "Es uno de los embalses más importantes de la provincia, y un importante destino turístico, debido a la belleza del lugar. Se caracteristiza por sus diversas actividades para el turista como por ejemplo: descenso de río, kayak, canotaje, cabalgatas, rapel, escaladas, tirolesa, senderismo, parapente, paseo en catamarán en el lago, windsurf, esquí acuático, cuatriciclos.",
+    "circuitos.card2": "A aproximadamente 40 km de La Posada de Don Felipe",
+    "circuitos.card3.text": "Es un estrecho cañon donde desemboca el rio Atuel que conecta El Nihuil con el Valle Grande. Con una extensión de aproximadamente 60 km es el dueño de muchos de los mejores paisajes de nuestra localidad.",
+    "circuitos.card3": "A aproximadamente 40 km de La Posada de Don Felipe entrando por el Valle Grande y a 70 km de La Posada de Don Felipe entrando por El Nihuil.",
+    "circuitos.card4.text": "Nació junto con el Fuerte del Diamante en el año 1805, y desde ese año fue establecida como cabecera departamental hasta el año 1905. Es de las localidades mas antiguas de nuestra provincia, repleta de historia y de lindos lugares.",
+    "circuitos.card4": "A aproximadamente 25 km de La Posada de Don Felipe",
+    "circuitos.card5.text": "Embalse construido sobre el rio Diamante. Tal vez el menos conocido y mas infravalorado, sin embargo sus aguas son perfectas para la pesca y cuenta con uno de los atardeceres mas lindos del departamento.",
+    "circuitos.card5": "A aproximadamente 30 km de La Posada de Don Felipe",
+    "circuitos.card6.text": "Cuenta con un club de náutica y pesca donde se practican deportes acuáticos como el esquí, wakeboard, windsurf, canotaje, buceo, pesca, entre otros. Alrededor de sus costas se encuentran casas de fin de semana, restaurantes, campamentos,cabañas.",
+    "circuitos.card6": "A aproximadamente 35 km de La Posada de Don Felipe",
+
+    "footer.info": "Somos una humilde familia que durante la pandemia tomó la desición de comenzar este emprendimiento para sustentarse. La remodelación de la casa en su totalidad cuenta con el sudor de cada uno de nosotros, para transformar la casa donde crecimos en un lugar completamente acogedor y que nuestro hogar tambien pueda ser el hogar momentaneo de otros.",
+    "footer.contacto.title": "Contactanos: ",
+    "footer.contacto.telefono": "Teléfonos: ",
+    "footer.contacto.email": "Email: ",
+    "footer.contacto.direccion": "Dirección: ",
+    "footer.redes.title": "Nuestras redes sociales: "
 }

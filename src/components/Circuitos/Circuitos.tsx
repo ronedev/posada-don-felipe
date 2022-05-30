@@ -31,7 +31,13 @@ const Circuitos = () => {
                 </h2>
             </div>
             <div className='carrusel'>
-                <img src={leftArrow} alt="left arrow" className={carruselSelected === 'diamante' ? 'arrowVisible' : 'arrowInvisible'} onClick={() => changeCircuito()} />
+                <img src={leftArrow} alt="left arrow"
+                    className={carruselSelected === 'diamante' ? 'arrowVisible' : 'arrowInvisible'}
+                    onClick={() => {
+                        if (carruselSelected === 'diamante') {
+                            changeCircuito()
+                        }
+                    }} />
                 <div className='circuitoContainer'>
                     {Object.keys(circuitosInfo).map((circuitoName, idx) => {
                         const id: string = idx.toString()
@@ -50,8 +56,17 @@ const Circuitos = () => {
                         )
                     })}
                 </div>
-                <img src={rightArrow} alt="right arrow" className={carruselSelected === 'atuel' ? 'arrowVisible' : 'arrowInvisible'} onClick={() => changeCircuito()} />
+                <img src={rightArrow} alt="right arrow"
+                    className={carruselSelected === 'atuel' ? 'arrowVisible' : 'arrowInvisible'}
+                    onClick={() => {
+                        if (carruselSelected === 'atuel') {
+                            changeCircuito()
+                        }
+                    }} />
             </div>
+            <button className='btn2'>
+                <FormattedMessage id='circuitos.btn' defaultMessage='Ver la posada'/>
+            </button>
         </section>
     )
 }
