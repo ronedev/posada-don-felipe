@@ -16,7 +16,11 @@ const CircuitoPlaceProvider = ({children}:props) => {
     const [placeSelected, setPlaceSelected] = useState<string>('')
 
     const changePlaceSelected = (place:string)=>{
-        setPlaceSelected(place)
+        if(place === placeSelected){
+            setPlaceSelected('')
+        }else{
+            setPlaceSelected(place)
+        }
     }
 
     return(

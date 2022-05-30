@@ -12,12 +12,19 @@
         justify-content: center;
         border-radius: 0 0 20rem 20rem;
         background-color: $terciario;
+        @include tablet{
+            align-items: center;
+        }
         h2{
             font-size: 2rem;
             color: $blanco;
             font-family: $fuente_principal;
             font-weight: 600;
             text-align: center;
+            @include tablet{
+                font-size: 1.5rem;
+                width: 15rem;
+            }
         }
     }
     .carrusel{
@@ -27,12 +34,16 @@
         gap: 4rem;
         width: 100%;
         margin-bottom: 2rem;
-        .arrowVisible{
+        .arrowInvisible,.arrowVisible{
             width: 4rem;
+            @include tablet{
+                width: 3rem;
+            }
+        }
+        .arrowVisible{
             cursor: pointer;
         }
         .arrowInvisible{
-            width: 4rem;
             opacity: .4;
             cursor:no-drop;
         }
@@ -40,6 +51,10 @@
             width: 70rem;
             height: 50rem;
             position: relative;
+            @include tablet{
+                width: 50rem;
+                height: 40rem;
+            }
         }
         .circuito{
             display: flex;
@@ -63,6 +78,12 @@
                 font-size: 3.5rem;
                 color: $principal;
                 margin: 3rem 0;
+                @include tablet{
+                    font-size: 2.5rem;
+                }
+                @include telefono{
+                    font-size: 1.8rem;
+                }
                 span{
                     font-weight: 900;
                     color: $secundario;
@@ -74,6 +95,12 @@
                 align-items: center;
                 justify-content: space-evenly;
                 gap: 3rem;
+                @include tablet{
+                    gap: 1rem;
+                }
+                @include telefono{
+                    gap: .5rem;
+                }
                 .card{
                     width: 20rem;
                     height: 35rem;
@@ -82,6 +109,16 @@
                     transition: all .5s;
                     -webkit-transition: all .5s;
                     -moz-transition: all .5s;
+                    @include tablet{
+                        width: 10rem;
+                        height: 25rem;
+                        transition: all .1s;
+                        -webkit-transition: all .1s;
+                        -moz-transition: all .1s;
+                    }
+                    @include telefono{
+                        width: 6rem;
+                    }
                     img{
                         height: 100%;
                         width: 100%;
@@ -96,12 +133,13 @@
                         height: 100%;
                         opacity: 0;
                         transition: all .5s;
-                        -webkit-transition: all .5s;
-                        -moz-transition: all .5s;
                         padding: 1rem;
                         display: grid;
                         align-content: center;
                         justify-items: center;
+                        @include tablet{
+                            transition: all .2s;
+                        }
                         h4,p,span{
                             font-family: $fuente_principal;
                             color: $aux;
@@ -112,20 +150,44 @@
                             margin: 0;
                             margin-bottom: 1rem;
                             width: 90%;
+                            @include tablet{
+                                font-size: 1.5rem;
+                            }
+                            @include telefono{
+                                font-size: 1.2rem;
+                            }
                         }
                         p{
                             font-size: 1.3rem;
                             font-weight: 300;
                             width: 80%;
+                            @include tablet{
+                                font-size: 1rem;
+                            }
+                            @include telefono{
+                                font-size: .8rem;
+                            }
                         }
                         span{
                             font-size: 1.5rem;
                             font-weight: 500;
                             width: 80%;
+                            @include tablet{
+                                font-size: 1.2rem;
+                            }
+                            @include telefono{
+                                font-size: 1rem;
+                            }
                         }
                     }
                     &.selected{
                         width: 30rem;
+                        @include tablet{
+                            width: 20rem;
+                        }
+                        @include telefono{
+                            width: 15rem;
+                        }
                         .infoCard{
                             opacity: 1;
                         }
