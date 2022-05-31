@@ -1,5 +1,5 @@
 import { circuitoPlaceContext } from 'context/CircuitoPlaceContext'
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { FormattedMessage } from 'react-intl'
 
 interface circuito {

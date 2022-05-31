@@ -13,7 +13,7 @@ const Ambientes = () => {
                     {ambientesInfo.map((ambiente, idx) => {
                         return (
                             <>
-                                <AmbienteCard ambiente={ambiente} id={idx}/>
+                                <AmbienteCard ambiente={ambiente} id={idx} totalAmbientes={ambientesInfo.length}/>
                             </>
                         )
                     })}

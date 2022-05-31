@@ -6,20 +6,36 @@
     .ambientesCarrusel{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
+        gap: 3rem;
         position: relative;
-        width: 100%;
+        width: 100vw;
         height: 30rem;
         .ambienteCard{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            position: absolute;
-            width: 100%;
-            top: 0;
-            left: 300%;
+            display: none;
+            transition: all .8s;
+            cursor: grab;
+            &.selected, &.prev, &.next{
+                opacity: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 80%;
+                position: absolute;
+                top: 0;
+                @include tablet{
+                    flex-direction: column;
+                    width: 60%;
+                }
+            }
+            &.prev{
+                left: -60%;
+            }
             &.selected{
-                left: 0;
+                left: 10%;
+            }
+            &.next{
+                left: 80%;
             }
             img{
                 width: 30rem;
@@ -50,6 +66,7 @@
             height: 1.5rem;
             border-radius: 1rem;
             background-color: $terciario;
+            cursor: pointer;
             &.selected{
                 background-color: $principal;
             }
