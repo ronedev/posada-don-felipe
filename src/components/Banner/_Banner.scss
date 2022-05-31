@@ -1,0 +1,39 @@
+.bannerContainer{
+    width: 100%;
+    position: relative;
+    height: 35rem;
+    @include tablet{
+        height: 25rem;
+    }
+    @include telefono{
+        height: 20rem;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    h2{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $fuente_principal;
+        font-size: 3.5rem;
+        color: $blanco;
+        text-transform: uppercase;
+        @include tablet{
+            font-size: 3rem;
+        }
+        @include telefono{
+            font-size: 2.5rem;
+        }
+    }
+}

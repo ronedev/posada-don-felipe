@@ -5,10 +5,14 @@ import {
   Route
 } from 'react-router-dom'
 import Navbar from 'components/Navbar/Navbar';
-import Header from 'components/Header/Header';
+import Header from 'components/HeaderInicio/Header';
 import { SanRafael } from 'components/San Rafael/SanRafael';
 import { Circuitos } from 'components/Circuitos/Circuitos';
 import { Footer } from 'components/Footer/Footer';
+import { HeaderPosada } from 'components/HeaderPosada/HeaderPosada';
+import { Banner } from 'components/Banner/Banner';
+import bannerPosada from 'img/posada/bannerPosada.png'
+import { Ambientes } from 'components/Ambientes/Ambientes';
 
 function App() {
   return (
@@ -26,7 +30,11 @@ function App() {
 
         <Route path='/posada-don-felipe' element={
           <>
-            La posada
+            <Navbar />
+            <HeaderPosada />
+            <Banner image={bannerPosada} idText='posada.banner.text' />
+            <Ambientes />
+            <Footer />
           </>
         } />
         <Route path='/contacto' element={

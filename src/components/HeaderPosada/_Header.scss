@@ -1,0 +1,46 @@
+.headerPosada{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 90vh;
+    @include tablet{
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .info{
+        font-family: $fuente_principal;
+        width: 50rem;
+        display: grid;
+        justify-items: end;
+        @include tablet{
+            justify-items: center;
+            width: 40rem;
+        }
+        h2{
+            text-align: end;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: .5rem;
+            @include tablet{
+                text-align: center;
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            width: 40rem;
+            @include tablet{
+                width: 35rem;
+                text-align: center;
+            }
+        }
+    }
+    video{
+        width: 45rem;
+    }
+}

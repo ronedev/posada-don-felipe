@@ -1,0 +1,58 @@
+.ambientesContainer{
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    .ambientesCarrusel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 30rem;
+        .ambienteCard{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 300%;
+            &.selected{
+                left: 0;
+            }
+            img{
+                width: 30rem;
+            }
+            .ambienteInfo{
+                font-family: $fuente_principal;
+                h2{
+                    font-size: 3rem;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: $principal;
+                }
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    color: $principal;
+                }
+            }
+        }
+    }
+    .ambientesIndicadores{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 20rem;
+        .indicador{
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 1rem;
+            background-color: $terciario;
+            &.selected{
+                background-color: $principal;
+            }
+        }
+    }
+}

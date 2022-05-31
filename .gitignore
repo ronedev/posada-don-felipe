@@ -11,6 +11,9 @@
 # production
 /build
 
+#video superior a 100mb
+.mp4
+
 # misc
 .DS_Store
 .env.local
