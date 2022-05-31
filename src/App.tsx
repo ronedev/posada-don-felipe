@@ -13,6 +13,7 @@ import { HeaderPosada } from 'components/HeaderPosada/HeaderPosada';
 import { Banner } from 'components/Banner/Banner';
 import bannerPosada from 'img/posada/bannerPosada.png'
 import { Ambientes } from 'components/Ambientes/Ambientes';
+import { Ubicacion } from 'components/Ubicacion/Ubicacion';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <HeaderPosada />
             <Banner image={bannerPosada} idText='posada.banner.text' />
             <Ambientes />
+            <Ubicacion />
             <Footer />
           </>
         } />
