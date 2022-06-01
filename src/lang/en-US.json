@@ -26,6 +26,23 @@
     "circuitos.card6.text": "It has a nautical and fishing club where water sports such as skiing, wakeboarding, windsurfing, canoeing, diving, fishing, among others, are practiced. Around its shores are weekend houses, restaurants, camps, cabins.",
     "circuitos.card6": "Approximately 35 km from La Posada de Don Felipe",
 
+    "posada.header.title": "Our beautiful inn",
+    "posada.header.description": "Like many other families during the global pandemic we were financially cornered. After months of sweat, tears and remodeling, La Posada de Don Felipe was born",
+    "posada.banner.text": "Meet our inn!",
+
+    "ambiente.living.title": "Living room",
+    "ambiente.living.description": "Air conditioning, heating, set of armchairs, 32” TV with DirecTV. The ideal space to spend time with the family.",
+    "ambiente.dormitorios.title": "Bedrooms",
+    "ambiente.dormitorios.description": "3 bedrooms prepared for 2 people each, 2 with single beds and one matrimonial. Each bedroom has pillows, sheets, and a remote-controlled fan.",
+    "ambiente.baño.title": "Restroom and bathroom",
+    "ambiente.baño.description": "Heating, set of towels for up to 6 people, sink, toilet, bidet and shower.",
+    "ambiente.garage.title": "Garage",
+    "ambiente.garage.description": "Closed and covered garage with space for 2 cars.",
+    "ambiente.cocina.title": "Kitchen and dining room",
+    "ambiente.cocina.description": "Large kitchen equipped with a  refrigerator and crockery for up to 6 people, as well as some useful cooking utensils.",
+    "ambiente.patio.title": "Garden",
+    "ambiente.patio.description": "Large garden with a semi-roofed area with lots of shade, barbecue, pool, chairs and table to enjoy outdoors inside the inn.",
+
     "footer.info": "We are a humble family that during the pandemic made the decision to start this entrepreneurship to support themselves. The remodeling of the house in its entirety counts on the sweat of each one of us, to transform the house where we grew up into a completely welcoming place and that our home can also be the momentary home of others.",
     "footer.contacto.title": "Contact us: ",
     "footer.contacto.telefono": "Phone numbers: ",

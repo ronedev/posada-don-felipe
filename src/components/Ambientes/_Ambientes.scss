@@ -11,6 +11,9 @@
         position: relative;
         width: 100vw;
         height: 30rem;
+        @include tablet{
+            height: 35rem;               
+        }
         .ambienteCard{
             display: none;
             transition: all .8s;
@@ -23,35 +26,68 @@
                 width: 80%;
                 position: absolute;
                 top: 0;
+                height: 80%;
                 @include tablet{
                     flex-direction: column;
                     width: 60%;
+                    gap: 2rem;
                 }
             }
             &.prev{
                 left: -60%;
+                height: 85%;
+                @include tablet{
+                    left: -50%;       
+                }
             }
             &.selected{
                 left: 10%;
+                height: 95%;
+                background-color: $aux;
+                z-index: 10;
+                @include tablet{
+                    border-radius: 1rem;
+                    width: 85%;
+                    left: 5%;       
+                }
             }
             &.next{
                 left: 80%;
+                height: 85%;
+                @include tablet{
+                    left:85%;       
+                }
             }
             img{
                 width: 30rem;
+                @include tablet{
+                    width: 25rem;
+                    margin-bottom: 2rem;      
+                }
             }
             .ambienteInfo{
                 font-family: $fuente_principal;
+                width: 40rem;
+                @include tablet{
+                    width: auto;
+                    text-align: center;       
+                }
                 h2{
                     font-size: 3rem;
                     text-transform: uppercase;
                     font-weight: 700;
                     color: $principal;
+                    @include tablet{
+                        font-size: 2.5rem;
+                    }
                 }
                 p{
                     font-size: 1.5rem;
                     font-weight: 300;
                     color: $principal;
+                    @include tablet{
+                        font-size: 1rem;   
+                    }
                 }
             }
         }
@@ -61,12 +97,19 @@
         align-items: center;
         justify-content: space-evenly;
         width: 20rem;
+        @include tablet{
+            width: 15rem;
+        }
         .indicador{
             width: 1.5rem;
             height: 1.5rem;
             border-radius: 1rem;
             background-color: $terciario;
             cursor: pointer;
+            @include tablet{
+                width: 1.2rem;
+                height: 1.2rem;           
+            }
             &.selected{
                 background-color: $principal;
             }

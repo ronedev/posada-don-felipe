@@ -1,0 +1,37 @@
+.ubicacionSection{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    @include tablet{
+        flex-direction: column;
+        gap: 4rem;
+        margin-bottom: 5rem;
+    }
+    .infoUbicacion{
+        width:40rem;
+        font-family: $fuente_principal;
+        @include tablet{
+            text-align: center;
+        }
+        h2{
+            color: $secundario;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            @include tablet{
+                font-size: 3rem;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: $negro;
+            @include tablet{
+                font-size: 1rem;
+            }
+        }
+    }
+}
