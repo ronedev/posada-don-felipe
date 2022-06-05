@@ -7,7 +7,7 @@
     "header.btn": "¡Consulta disponibilidad!",
 
     "sanRafael.text1": "En San Rafael no solo te esperan muchos de los mejores paisajes del pais, tambien diversion, aventura, fiesta, paz, armonia y excelente gastronomia. Haciendo de nuestra ciudad la mejor eleccion para disfrutar tanto en familia como individualmente.",
-    "sanRafael.text": "Y en La Posada de Don Felipe te damos la comodidad necesaria para que en nuestra ciudad te sientas como en casa. ¿Todavia te queda alguna duda?",
+    "sanRafael.text2": "Y en La Posada de Don Felipe te damos la comodidad necesaria para que en nuestra ciudad te sientas como en casa. ¿Todavia te queda alguna duda?",
     "sanRafael.btn": "Ver la posada",
 
     "circuitos.title": "Nuestra hermosa ciudad",
@@ -44,6 +44,7 @@
     "ambiente.patio.description": "Amplio patio con un sector semi techado con mucha sombra, parrilla, pileta, sillones y mesa para disfrutar al aire libre dentro de la posada.",
 
     "contacto.banner.text": "¡Llena el formulario y reservá!",
+    "contacto.title": "Contactanos y reservanos",
     "contacto.description": "Llenando el siguiente formulario realizaras tu consulta por disponibilidad para los dias especificados y en caso de tener otro tipo de consulta colocarla en forma de mensaje. Nosotros nos pondremos en contacto a la brevedad para informarte sobre disponibilidad y responder tus dudas",
     "contacto.form.name": "Nombre:",
     "contacto.form.email": "Email:",

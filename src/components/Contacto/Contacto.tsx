@@ -6,20 +6,29 @@ import emailjs from "@emailjs/browser";
 const Contacto = () => {
   const [formSend, setFormSend] = useState<boolean>(false);
 
+  const [entryValue, setEntryValue] = useState<string | null>(null)
+
   const expresiones = {
     name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     tel: /^\d{7,14}$/, // 7 a 14 numeros.
   };
 
+  const tiempoTranscurrido = new Date()
+  const actual = new Date(tiempoTranscurrido)
+
+  console.log(actual.toISOString().split('T')[0]);
   return (
     <section className="contactoContainer">
-      <p>
-        <FormattedMessage
-          id="contacto.description"
-          defaultMessage="Llenando el siguiente formulario realizaras tu consulta por disponibilidad para los dias especificados y en caso de tener otro tipo de consulta colocarla en forma de mensaje. Nosotros nos pondremos en contacto a la brevedad para informarte sobre disponibilidad y responder tus dudas."
-        />
-      </p>
+      <div className="infoContacto">
+        <h2><FormattedMessage id="contacto.title" defaultMessage="Contactanos y reservanos" /></h2>
+        <p>
+          <FormattedMessage
+            id="contacto.description"
+            defaultMessage="Llenando el siguiente formulario realizaras tu consulta por disponibilidad para los dias especificados y en caso de tener otro tipo de consulta colocarla en forma de mensaje. Nosotros nos pondremos en contacto a la brevedad para informarte sobre disponibilidad y responder tus dudas."
+          />
+        </p>
+      </div>
       <Formik
         initialValues={{
           name: "",
@@ -107,7 +116,7 @@ const Contacto = () => {
           });
         }}
       >
-        {({ errors, touched }) => (
+        {({ errors, touched, values }) => (
           <Form className="contactoForm">
             <div className="contactoInfo">
               <div className="input">
@@ -151,7 +160,7 @@ const Contacto = () => {
                 <label htmlFor="entry">
                   <FormattedMessage id="contacto.form.entry" />
                 </label>
-                <Field type="date" name="entry" id="entry" />
+                <Field type="date" name="entry" id="entry" min={actual.toISOString().split('T')[0]} />
                 {touched.entry && errors.entry && (
                   <div className="error">
                     <FormattedMessage id={errors.entry} />
@@ -163,7 +172,7 @@ const Contacto = () => {
                 <label htmlFor="exit">
                   <FormattedMessage id="contacto.form.exit" />
                 </label>
-                <Field type="date" name="exit" id="exit" />
+                <Field type="date" name="exit" id="exit" disabled={values.entry ? false : true} min={values.entry} />
                 {touched.exit && errors.exit && (
                   <div className="error">
                     <FormattedMessage id={errors.exit} />
@@ -195,8 +204,8 @@ const Contacto = () => {
             </div>
             {(touched.adults || touched.kids || touched.babys) &&
               errors.adults && <div className="error">
-                  <FormattedMessage id={errors.adults} />
-                </div>}
+                <FormattedMessage id={errors.adults} />
+              </div>}
             <label htmlFor="message">
               <FormattedMessage id="contacto.form.message" />
             </label>

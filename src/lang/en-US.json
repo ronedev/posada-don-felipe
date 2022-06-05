@@ -7,7 +7,7 @@
     "header.btn": "Check for availability!",
     
     "sanRafael.text1": "Many of the best landscapes in the country, fun, adventure, party, peace, harmony and excellent gastronomy await you in San Rafael. Making our city the best choice to enjoy both as a family and individually.",
-    "sanRafael.text": "And at La Posada de Don Felipe we give you the necessary comfort so that you feel at home in our city. Do you still have any questions?",
+    "sanRafael.text2": "And at La Posada de Don Felipe we give you the necessary comfort so that you feel at home in our city. Do you still have any questions?",
     "sanRafael.btn": "See the house",
 
     "circuitos.title": "Our beautiful city",
@@ -44,6 +44,7 @@
     "ambiente.patio.description": "Large garden with a semi-roofed area with lots of shade, barbecue, pool, chairs and table to enjoy outdoors inside the inn.",
 
     "contacto.banner.text": "Fill out the form and book!",
+    "contacto.title": "Contact us and book",
     "contacto.description": "By filling out the following form you will make your query for availability for the specified days and if you have another type of query, place it in the form of a message. We will contact you shortly to inform you about availability and answer your questions.",
     "contacto.form.name": "Name:",
     "contacto.form.email": "Email:",

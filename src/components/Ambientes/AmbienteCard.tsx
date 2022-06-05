@@ -36,7 +36,7 @@ const AmbienteCard = ({ ambiente, id, totalAmbientes }: props) => {
         className={
           id === ambienteSelected ? "ambienteCard selected" : id === ambientePrev ? 'ambienteCard prev' : id === ambienteNext ? 'ambienteCard next' : "ambienteCard"
         }
-        {...handlers}
+        {...id === ambienteSelected && handlers}
       >
         <div className="ambienteInfo">
           <h2>

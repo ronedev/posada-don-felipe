@@ -1,8 +1,9 @@
 .contactoContainer{
     width: 100%;
-    display: grid;
-    align-content: center;
-    justify-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
     margin: 3rem;
     input, textarea{
         padding: .5rem;
@@ -11,12 +12,18 @@
         font-family: $fuente_principal;
         outline: none;
     }
-    p{
-        font-size: 1.6rem;
+    .infoContacto{
+        width: 40%;
         font-family: $fuente_principal;
-        font-weight: 300;
-        text-align: center;
-        width: 80%;
+        h2{
+            font-size: 3.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 200;
+        }
     }
     .contactoForm{
         display: grid;
@@ -41,7 +48,7 @@
         }
         .error{
             font-family: $fuente_principal;
-            font-size: .9rem;
+            font-size: 1rem;
             color: $error;
             text-align: center;
         }

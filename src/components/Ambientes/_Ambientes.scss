@@ -17,7 +17,6 @@
         .ambienteCard{
             display: none;
             transition: all .8s;
-            cursor: grab;
             &.selected, &.prev, &.next{
                 opacity: 1;
                 display: flex;
@@ -45,6 +44,7 @@
                 height: 95%;
                 background-color: $aux;
                 z-index: 10;
+                cursor: grab;
                 @include tablet{
                     border-radius: 1rem;
                     width: 85%;
