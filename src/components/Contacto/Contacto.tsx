@@ -116,7 +116,9 @@ const Contacto = () => {
                 </label>
                 <Field type="text" name="name" id="name" />
                 {touched.name && errors.name && (
-                  <div className="error">{errors.name}</div>
+                  <div className="error">
+                    <FormattedMessage id={errors.name} />
+                  </div>
                 )}
               </div>
 
@@ -126,7 +128,9 @@ const Contacto = () => {
                 </label>
                 <Field type="email" name="email" id="email" />
                 {touched.email && errors.email && (
-                  <div className="error">{errors.email}</div>
+                  <div className="error">
+                    <FormattedMessage id={errors.email} />
+                  </div>
                 )}
               </div>
 
@@ -136,7 +140,9 @@ const Contacto = () => {
                 </label>
                 <Field type="tel" name="tel" id="tel" />
                 {touched.tel && errors.tel && (
-                  <div className="error">{errors.tel}</div>
+                  <div className="error">
+                    <FormattedMessage id={errors.tel} />
+                  </div>
                 )}
               </div>
             </div>
@@ -147,7 +153,9 @@ const Contacto = () => {
                 </label>
                 <Field type="date" name="entry" id="entry" />
                 {touched.entry && errors.entry && (
-                  <div className="error">{errors.entry}</div>
+                  <div className="error">
+                    <FormattedMessage id={errors.entry} />
+                  </div>
                 )}
               </div>
 
@@ -157,7 +165,9 @@ const Contacto = () => {
                 </label>
                 <Field type="date" name="exit" id="exit" />
                 {touched.exit && errors.exit && (
-                  <div className="error">{errors.exit}</div>
+                  <div className="error">
+                    <FormattedMessage id={errors.exit} />
+                  </div>
                 )}
               </div>
             </div>
@@ -182,9 +192,11 @@ const Contacto = () => {
                 </label>
                 <Field type="number" name="babys" id="babys" />
               </div>
-              {(touched.adults || touched.kids || touched.babys) &&
-                errors.adults && <div className="error">{errors.adults}</div>}
             </div>
+            {(touched.adults || touched.kids || touched.babys) &&
+              errors.adults && <div className="error">
+                  <FormattedMessage id={errors.adults} />
+                </div>}
             <label htmlFor="message">
               <FormattedMessage id="contacto.form.message" />
             </label>
