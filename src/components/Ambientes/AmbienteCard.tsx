@@ -45,7 +45,7 @@ const AmbienteCard = ({ ambiente, id, totalAmbientes }: props) => {
           <p>
             <FormattedMessage id={ambiente.description} />
           </p>
-          <button className="btn2">
+          <button className="btn2" onClick={()=> window.location.href = '/contacto'}>
             <FormattedMessage id="ambiente.btn" defaultMessage="Reservar" />
           </button>
         </div>

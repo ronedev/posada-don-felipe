@@ -64,7 +64,7 @@ const Circuitos = () => {
                         }
                     }} />
             </div>
-            <button className='btn2'>
+            <button className='btn2' onClick={()=> window.location.href = '/posada-don-felipe'}>
                 <FormattedMessage id='circuitos.btn' defaultMessage='Ver la posada'/>
             </button>
         </section>

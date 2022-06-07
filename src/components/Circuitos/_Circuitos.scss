@@ -34,6 +34,10 @@
         gap: 4rem;
         width: 100%;
         margin-bottom: 2rem;
+        @include tablet{
+            padding: 0 3rem;
+            margin: 0;
+        }
         .arrowInvisible,.arrowVisible{
             width: 4rem;
             @include tablet{

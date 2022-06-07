@@ -1,5 +1,5 @@
 import { langContext } from "context/LangContext";
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { FormattedMessage } from "react-intl";
 
 const Navbar = () => {
@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <nav className="nav">
-        <h1 id="logo">
+        <h1 id="logo" onClick={()=> window.location.href = '/'}>
           La posada de <span>Don Felipe</span>
         </h1>
         <div
