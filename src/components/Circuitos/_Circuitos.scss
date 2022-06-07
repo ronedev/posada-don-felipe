@@ -37,6 +37,10 @@
         @include tablet{
             padding: 0 3rem;
             margin: 0;
+            gap: 2rem;
+        }
+        @include telefono{
+            padding: 0 .5rem;
         }
         .arrowInvisible,.arrowVisible{
             width: 4rem;
@@ -114,14 +118,14 @@
                     -webkit-transition: all .5s;
                     -moz-transition: all .5s;
                     @include tablet{
-                        width: 10rem;
+                        width: 15rem;
                         height: 25rem;
                         transition: all .1s;
                         -webkit-transition: all .1s;
                         -moz-transition: all .1s;
                     }
                     @include telefono{
-                        width: 6rem;
+                        width: 8rem;
                     }
                     img{
                         height: 100%;

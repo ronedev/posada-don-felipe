@@ -6,8 +6,6 @@ import emailjs from "@emailjs/browser";
 const Contacto = () => {
   const [formSend, setFormSend] = useState<boolean>(false);
 
-  const [entryValue, setEntryValue] = useState<string | null>(null)
-
   const expresiones = {
     name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -17,7 +15,6 @@ const Contacto = () => {
   const tiempoTranscurrido = new Date()
   const actual = new Date(tiempoTranscurrido)
 
-  console.log(actual.toISOString().split('T')[0]);
   return (
     <section className="contactoContainer">
       <div className="infoContacto">

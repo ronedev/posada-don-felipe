@@ -14,9 +14,12 @@ interface props {
 }
 
 const AmbienteCard = ({ ambiente, id, totalAmbientes }: props) => {
-  const { ambienteSelected, ambienteNext, ambientePrev, changeAmbienteSelected } = useContext(
-    ambienteSelectedContext
-  );
+  const {
+    ambienteSelected,
+    ambienteNext,
+    ambientePrev,
+    changeAmbienteSelected,
+  } = useContext(ambienteSelectedContext);
 
   const handlers = useSwipeable({
     onSwipedLeft: (e) =>
@@ -34,9 +37,15 @@ const AmbienteCard = ({ ambiente, id, totalAmbientes }: props) => {
     <>
       <article
         className={
-          id === ambienteSelected ? "ambienteCard selected" : id === ambientePrev ? 'ambienteCard prev' : id === ambienteNext ? 'ambienteCard next' : "ambienteCard"
+          id === ambienteSelected
+            ? "ambienteCard selected"
+            : id === ambientePrev
+            ? "ambienteCard prev"
+            : id === ambienteNext
+            ? "ambienteCard next"
+            : "ambienteCard"
         }
-        {...id === ambienteSelected && handlers}
+        {...(id === ambienteSelected && handlers)}
       >
         <div className="ambienteInfo">
           <h2>
@@ -45,7 +54,10 @@ const AmbienteCard = ({ ambiente, id, totalAmbientes }: props) => {
           <p>
             <FormattedMessage id={ambiente.description} />
           </p>
-          <button className="btn2" onClick={()=> window.location.href = '/contacto'}>
+          <button
+            className="btn2"
+            onClick={() => (window.location.href = "/contacto")}
+          >
             <FormattedMessage id="ambiente.btn" defaultMessage="Reservar" />
           </button>
         </div>

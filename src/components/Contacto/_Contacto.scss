@@ -15,6 +15,7 @@
         border-radius: 1rem;
         font-family: $fuente_principal;
         outline: none;
+        width: 100%;
     }
     .infoContacto{
         width: 30%;
@@ -28,11 +29,16 @@
             text-transform: uppercase;
             @include tablet{
                 text-align: center;
+                font-size: 2.8rem;
             }
         }
         p{
             font-size: 1.8rem;
-            font-weight: 300;
+            font-weight: 200;
+            @include tablet{
+                font-size: 1.4rem;
+                text-align: center;
+            }
         }
     }
     .contactoForm{
@@ -43,10 +49,22 @@
         padding: 4rem;
         border: 1px solid $principal;
         border-radius: 2rem;
+        @include tablet{
+            padding: 2rem;
+        }
+        @include telefono{
+            padding: 1rem;
+        }
         .contactoInfo{
             display: flex;
             justify-content: space-evenly;
             gap: 3rem;
+            @include tablet{
+                gap: 2rem;
+            }
+            @include telefono{
+                gap: 1rem;
+            }
             .input{
                 display: grid;
                 align-content: center;
@@ -54,6 +72,12 @@
                 gap: .5rem;
                 width: 12rem;
                 height: 5rem;
+                @include tablet{
+                    width: 10rem;
+                }
+                @include telefono{
+                    width: 8rem;
+                }
             }
         }
         .error{
@@ -66,6 +90,9 @@
             font-size: 1.2rem;
             color: $principal;
             font-family: $fuente_principal;
+            @include telefono{
+                font-size: 1rem;
+            }
         }
     }
 }

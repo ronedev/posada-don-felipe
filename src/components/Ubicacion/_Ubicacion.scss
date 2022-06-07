@@ -14,6 +14,7 @@
         width:40rem;
         font-family: $fuente_principal;
         @include tablet{
+            padding: 2rem;
             text-align: center;
         }
         h2{

@@ -19,6 +19,7 @@ const Navbar = () => {
               ? "navegacionContainer active"
               : "navegacionContainer desactive"
           }
+          onClick={()=> menuVisible && setMenuVisible(false) }
         >
           <ul className="navegacion">
             <li>
